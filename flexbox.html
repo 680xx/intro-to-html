@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Practice</title>
+  </head>
+  <body style="padding-bottom: 1500px;">
+    <div style="
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="background-color:
+      lightblue">div 1 text</div>
+      <div style="background-color: 
+      lightpink">div 2 <p>text</p></div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+      <div style="
+        background-color: lightpink;
+        flex: 1;
+      ">flex: 1</div>                                 <!-- flex: 1 är en variant på 1fr -->
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+    ">
+    <div style="
+      background-color: lightblue;
+      flex: 1;
+    ">flex: 1</div>                                   <!-- Eftersom storleken skrivs i columnen så följer den med vid flytt -->
+    <div style="
+      background-color: lightpink;
+      width: 100px;
+    ">100px</div>
+    <div style="
+    background-color: lightblue;
+    flex: 2;
+  ">flex: 2</div>
+    </div>                                            <!-- flex: 2 tar dubbel storlek gentemot flex: 1 -->
+
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    ">                                                <!-- justify-content ändrar placering (start/center/end) -->
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+    ">100px</div>
+    <div style="
+      background-color: lightpink;
+      width: 100px;
+    ">100px</div>
+    <div style="
+    background-color: lightblue;
+    width: 100px;
+  ">100px</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    ">                                                <!-- space-between skapar och fördelar mellanrum mellan varje kolumn -->
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+    ">100px</div>
+    <div style="
+      background-color: lightpink;
+      width: 100px;
+    ">100px</div>
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+    ">100px</div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  ">                                                <!-- align-items bestämmer hur innehållet i en kolumn ska placeras horisontellt (stretch/start/center/end) -->
+  <div style="
+    background-color: lightblue;
+    width: 100px;
+  ">100px</div>
+  <div style="
+    background-color: lightpink;
+    width: 100px;
+  ">100px</div>
+  <div style="
+    background-color: lightblue;
+    width: 100px;
+  ">100px</div>
+</div>
+  </body>
+</html>

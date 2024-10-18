@@ -1,0 +1,69 @@
+.subscribe-button {                         /* . före anropar klass-namn istället för element-namn, vilket ändrar alla knappar. */
+  background-color:rgb(200, 0, 0);
+  color:white;
+  border: none;
+  /* height: 36px;                             storlek höjd, bättre alternativ är padding. Då anpassas storleken efter texten
+  /* width: 105px; */
+  border-radius: 2px;                       /* Rundar hörnen. */
+  cursor: pointer;                          /* Pekaren blir en hand när den hovrar en länk. */
+  margin-right: 8px;                        /* Skapar tomrum till höger om knappen. */
+  margin-left: 20px;
+  padding-top: 10px;                        /* Tomrum mellan text och överkant på knappen */
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: opacity 0.15s;                /* Ändrar tiden för övergången av "opacity" */
+  vertical-align: top;                      /* Override så att den inte anpassar höjden efter texten i knapparna. */
+}
+
+.subscribe-button:hover {                   /* Aktiveras när man för pekaren över knappen, s.k. pseudo-class */
+  opacity: 0.8;
+}
+
+.subscribe-button:active {                  /* Aktiveras när man klickar. */
+  opacity: 0.5;
+}
+
+.join-button {
+  background-color: white;
+  border-color: rgb(41, 118, 211);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(41, 118, 211);
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s,          /* Ändrar tiden för övergången av "background-color" och "color" */
+    color 0.15s;
+}
+
+.join-button:hover {
+  background-color: rgb(41, 118, 211);
+  color: white;
+}
+
+.join-button:active {
+  opacity: 0.7;
+}
+
+.tweet-button {
+  background-color: rgb(2, 158, 255);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 74px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: box-shadow 0.15s;
+  vertical-align: top; 
+}
+
+.tweet-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);                /* Kastar skugga (horisontellt, vertikalt, blur, färg (a=opacity)) */
+}
